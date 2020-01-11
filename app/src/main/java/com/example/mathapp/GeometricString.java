@@ -2,7 +2,11 @@ package com.example.mathapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -76,5 +80,69 @@ public class GeometricString extends AppCompatActivity {
         double result;
         result = Double.valueOf(a1.getText().toString())*Math.pow(Double.valueOf(q.getText().toString()),(Integer.parseInt(n.getText().toString())-1)) ;
         resulttext.setText("N-ty wyraz wynosi: "+result);
+    }
+
+
+    /////////////MENU/////////////////////
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+        return true;
+    }
+
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId())
+        {
+            case R.id.menuMultiplicationTable:
+                startActivity(new Intent(GeometricString.this, MultiplicationTable.class));
+                return true;
+            case R.id.menuLinearFunction:
+                startActivity(new Intent(GeometricString.this, LinearFunction.class));
+                return true;
+            case R.id.menuQuadraticFunction:
+                startActivity(new Intent(GeometricString.this, QuadraticFunction.class));
+                return true;
+            case R.id.menuArithmeticString:
+                startActivity(new Intent(GeometricString.this, ArithmeticString.class));
+                return true;
+            case R.id.menuGeometricString:
+                startActivity(new Intent(GeometricString.this, GeometricString.class));
+                return true;
+            case R.id.menuSubSquare:
+                startActivity(new Intent(GeometricString.this, Square.class));
+                return true;
+            case R.id.menuSubRectangle:
+                startActivity(new Intent(GeometricString.this, Rectangle.class));
+                return true;
+            case R.id.menuSubTrianglesEquilateral:
+                startActivity(new Intent(GeometricString.this, TriangleEquilateral.class));
+                return true;
+            case R.id.menuSubTrianglesRectangular:
+                startActivity(new Intent(GeometricString.this, TrianglesRectangular.class));
+                return true;
+            case R.id.menuSubCircle:
+                startActivity(new Intent(GeometricString.this, Circle.class));
+                return true;
+            case R.id.menuSubSolidCube:
+                startActivity(new Intent(GeometricString.this, Cube.class));
+                return true;
+            case R.id.menuSubSolidCuboid:
+                startActivity(new Intent(GeometricString.this, Cuboid.class));
+                return true;
+            case R.id.menuSubSolidSphere:
+                startActivity(new Intent(GeometricString.this, Sphere.class));
+                return true;
+            case R.id.menuSubSolidCone:
+                startActivity(new Intent(GeometricString.this, Cone.class));
+                return true;
+            case R.id.menuMainPage:
+                startActivity(new Intent(GeometricString.this, MainActivity.class));
+                return true;
+            default:
+        }
+        return true;
     }
 }

@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <item
+        android:id="@+id/menuMainPage"
+        android:title="Strona Główna" />
     <item
         android:id="@+id/menuMultiplicationTable"
         android:title="Tabliczka Mnożenia" />
@@ -22,12 +26,50 @@
         android:title="Figury">
         <menu >
             <item
+                android:id="@+id/menuSubCircle"
+                android:title="Koło" />
+            <item
                 android:id="@+id/menuSubSquare"
                 android:title="Kwadrat" />
             <item
                 android:id="@+id/menuSubRectangle"
                 android:title="Prostokąt" />
+            <item
+                android:id="@+id/menuSubTriangles"
+                android:title="Trójkąty">
+                <menu >
+                    <item
+                        android:id="@+id/menuSubTrianglesEquilateral"
+                        android:title="Równoboczny" />
+                    <item
+                        android:id="@+id/menuSubTrianglesRectangular"
+                        android:title="TwierdzeniePitagorasa" />
+                </menu>
+            </item>
+
         </menu>
     </item>
+    <item
+        android:id="@+id/menuSolid"
+        android:title="Bryły" >
+        <menu >
+            <item
+                android:id="@+id/menuSubSolidCube"
+                android:title="Sześcian" />
+            <item
+                android:id="@+id/menuSubSolidCuboid"
+                android:title="Prostopadłościan" />
+            <item
+                android:id="@+id/menuSubSolidSphere"
+                android:title="Kula" />
+            <item
+                android:id="@+id/menuSubSolidCone"
+                android:title="Stożek" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/menuCloseApp"
+        android:title="Zamknij"
+        android:visible="false" />
 
 </menu>

@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_main);
         }
+
+
 /////////////////////////////////////////MENU////////////////////////////////////
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -23,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         inflater.inflate(R.menu.menu, menu);
         return true;
     }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -48,6 +52,30 @@ public class MainActivity extends AppCompatActivity {
                     return true;
                 case R.id.menuSubRectangle:
                     startActivity(new Intent(MainActivity.this, Rectangle.class));
+                    return true;
+                case R.id.menuSubTrianglesEquilateral:
+                    startActivity(new Intent(MainActivity.this, TriangleEquilateral.class));
+                    return true;
+                case R.id.menuSubTrianglesRectangular:
+                    startActivity(new Intent(MainActivity.this, TrianglesRectangular.class));
+                    return true;
+                case R.id.menuSubCircle:
+                    startActivity(new Intent(MainActivity.this, Circle.class));
+                    return true;
+                case R.id.menuSubSolidCube:
+                    startActivity(new Intent(MainActivity.this, Cube.class));
+                    return true;
+                case R.id.menuSubSolidCuboid:
+                    startActivity(new Intent(MainActivity.this, Cuboid.class));
+                    return true;
+                case R.id.menuSubSolidSphere:
+                    startActivity(new Intent(MainActivity.this, Sphere.class));
+                    return true;
+                case R.id.menuSubSolidCone:
+                    startActivity(new Intent(MainActivity.this, Cone.class));
+                    return true;
+                case R.id.menuMainPage:
+                    startActivity(new Intent(MainActivity.this, MainActivity.class));
                     return true;
                     default:
             }

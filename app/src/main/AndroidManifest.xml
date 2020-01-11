@@ -9,7 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Rectangle"></activity>
+        <activity android:name=".Cone"></activity>
+        <activity android:name=".Sphere" />
+        <activity android:name=".Cuboid" />
+        <activity android:name=".Cube" />
+        <activity android:name=".Circle" />
+        <activity android:name=".TrianglesRectangular" />
+        <activity android:name=".TriangleEquilateral" />
+        <activity android:name=".Rectangle" />
         <activity android:name=".Square" />
         <activity android:name=".GeometricString" />
         <activity android:name=".ArithmeticString" />
