@@ -46,6 +46,9 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.menuSubSquare:
                     startActivity(new Intent(MainActivity.this, Square.class));
                     return true;
+                case R.id.menuSubRectangle:
+                    startActivity(new Intent(MainActivity.this, Rectangle.class));
+                    return true;
                     default:
             }
         return true;

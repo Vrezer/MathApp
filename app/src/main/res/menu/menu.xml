@@ -24,6 +24,9 @@
             <item
                 android:id="@+id/menuSubSquare"
                 android:title="Kwadrat" />
+            <item
+                android:id="@+id/menuSubRectangle"
+                android:title="Prostokąt" />
         </menu>
     </item>
 
