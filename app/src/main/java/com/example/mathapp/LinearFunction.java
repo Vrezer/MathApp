@@ -25,6 +25,7 @@ public class LinearFunction extends AppCompatActivity {
    public void calculate(View view)
 
     {
+        int z=0;
         EditText a =findViewById(R.id.linearFunctionEditTextA);
         EditText b=findViewById(R.id.linearFunctionEditTextB);
         TextView result =findViewById(R.id.LinearFunctionTextViewResult);
