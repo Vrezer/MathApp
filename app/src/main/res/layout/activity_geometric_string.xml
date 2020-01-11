@@ -4,6 +4,128 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GeometricString">
+    tools:context=".GeometricString"
+    android:background="@drawable/background">
 
+    <ImageView
+        android:id="@+id/GeometricStringImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="151dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="152dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GeometricStringTextViewResult" />
+
+    <TextView
+        android:id="@+id/GeometricStringTextViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/geometricStringEditTextQ" />
+
+    <Button
+        android:id="@+id/geometricStringButtonNWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="60dp"
+        android:onClick="NwordStringLogic"
+        android:text="Oblicz"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/ArithmetictStringEditTextA1"
+        app:layout_constraintTop_toBottomOf="@+id/GeometricStringButtonNword" />
+
+    <Button
+        android:id="@+id/GeometricStringButtonCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="60dp"
+        android:onClick="SumStringLogic"
+        android:text="Oblicz"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/ArithmetictStringEditTextA1"
+        app:layout_constraintTop_toBottomOf="@+id/GeometricStringButtonNword" />
+
+    <EditText
+        android:id="@+id/geometricStringEditTextQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Podaj Q"
+        android:inputType="text|numberDecimal"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/geometricStringEditTextN" />
+
+    <EditText
+        android:id="@+id/geometricStringEditTextN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Podaj ilośc wyrazów(n)"
+        android:inputType="text|numberDecimal"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GeometricStringEditTextA1" />
+
+    <Button
+        android:id="@+id/GeometricStringButtonNword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="48dp"
+        android:onClick="NwordString"
+        android:text="N-ty Wyraz Ciągu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/GeometricStringButtonSum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="110dp"
+        android:onClick="SumString"
+        android:text="Suma Ciągu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/GeometricStringEditTextA1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Podaj A1"
+        android:inputType="text|numberDecimal"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GeometricStringButtonSum" />
 </androidx.constraintlayout.widget.ConstraintLayout>

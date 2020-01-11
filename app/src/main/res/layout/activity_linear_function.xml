@@ -4,6 +4,89 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".LinearFunction">
+
+    <EditText
+        android:id="@+id/linearFunctionEditTextB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="180dp"
+        android:ems="10"
+        android:hint="Podaj  B"
+        android:inputType="text|numberDecimal"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.422"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.526" />
+
+    <EditText
+        android:id="@+id/linearFunctionEditTextA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginBottom="105dp"
+        android:ems="10"
+        android:hint="Podaj  A"
+        android:inputType="text|numberDecimal"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.422"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.936" />
+
+    <TextView
+        android:id="@+id/LinearFunctionTextViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="349dp"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/linearbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:onClick="calculate"
+        android:text="Oblicz"
+        app:layout_constraintBottom_toTopOf="@+id/LinearFunctionTextViewResult"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearbutton"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/linowawzor" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

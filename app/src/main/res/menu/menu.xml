@@ -5,4 +5,26 @@
     <item
         android:id="@+id/menuMultiplicationTable"
         android:title="Tabliczka Mnożenia" />
+    <item
+        android:id="@+id/menuLinearFunction"
+        android:title="Funkcja Liniowa" />
+    <item
+        android:id="@+id/menuQuadraticFunction"
+        android:title="Funkcja Kwadratowa" />
+    <item
+        android:id="@+id/menuArithmeticString"
+        android:title="Ciag Arytmetyczny" />
+    <item
+        android:id="@+id/menuGeometricString"
+        android:title="Ciąg Geometryczny" />
+    <item
+        android:id="@+id/menuFigure"
+        android:title="Figury">
+        <menu >
+            <item
+                android:id="@+id/menuSubSquare"
+                android:title="Kwadrat" />
+        </menu>
+    </item>
+
 </menu>
